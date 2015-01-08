@@ -27,7 +27,10 @@ Python "in" is supported:
 
     'github' in mylist ### True
     for i, c in enumerate(mylist):
-      print(i,c) ### 0, 'pizza', 1, 'yo' ....
+      print(i,c) 
+      #0 'pizza'
+      #1 'yo' 
+      #...
 
 Most other native array functions are supported - len, sort, pop, clear.
 
