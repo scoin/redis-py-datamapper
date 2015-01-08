@@ -5,7 +5,7 @@ Version 0.1.0
 --------------
 Currently only RedisList is implemented. Dependent on redis-py. Make sure to start redis-server.
 
-Not all native Python array functions implemented but most are. Check source.
+Not all native Python List functions implemented but most are. Check source and tests.
 
 All operations are atomic!
 
