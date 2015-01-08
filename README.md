@@ -11,17 +11,23 @@ All operations are atomic!
 
 ###How to Use
     
-    mylist = RedisList(key)
-    mylist.append('github', 'google', 'facebook')
-    mylist.unshift('yo', 'secret')
-    list(mylist) # ['secret', 'yo', 'github', 'google', 'facebook']
+    >>>mylist = RedisList(key)
+    >>>mylist.append('github', 'google', 'facebook')
+    >>>mylist.unshift('yo', 'secret')
+    >>>list(mylist)
+    ['secret', 'yo', 'github', 'google', 'facebook']
     
 Bracket notation and assignment is fully supported:
 
-    mylist[0] # 'secret'
-    mylist[1:3] # 'yo', 'github'
-    mylist[0] = 'pizza'
-    list(mylist) # ['pizza', 'yo', 'github', 'google', 'facebook']
+    >>>mylist[0]
+    'secret'
+    
+    >>>mylist[1:3]
+    [yo', 'github']
+    
+    >>>mylist[0] = 'pizza'
+    >>>list(mylist)
+    ['pizza', 'yo', 'github', 'google', 'facebook']
 
 Python "in" is supported:
 
