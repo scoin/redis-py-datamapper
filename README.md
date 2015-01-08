@@ -2,9 +2,12 @@ redis-py-datamapper
 ===================
 
 Version 0.1.0
-
+--------------
 Currently only RedisList is implemented. Dependent on redis-py. Make sure to start redis-server.
-Not all native Python array functions implemented - check source.
+
+Not all native Python array functions implemented but most are. Check source.
+
+All operations are atomic!
 
 ###How to Use
     
