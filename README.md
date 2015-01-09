@@ -5,7 +5,7 @@ Version 0.1.0
 --------------
 Currently only RedisList is implemented. Dependent on redis-py. Make sure to start redis-server.
 
-Not all native Python array functions implemented but most are. Check source.
+Not all native Python List functions implemented but most are. Check source and tests.
 
 All operations are atomic!
 
@@ -34,7 +34,7 @@ Python "in" is supported:
     >>>'github' in mylist ### True
     
     >>>for i, c in enumerate(mylist):
-      >>>print(i,c) 
+    >>> print(i,c) 
     0 'pizza'
     1 'yo' 
     2 'github'
