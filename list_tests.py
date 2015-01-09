@@ -1,4 +1,4 @@
-from item import RedisList
+from redislist import RedisList
 import unittest
 
 class TestSequenceFunctions(unittest.TestCase):

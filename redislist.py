@@ -10,8 +10,8 @@ class RedisList:
     def unshift(self, *values):
         self.r.lpush(self.key, *values)
 
-    def insert(self, pivotValue, value):
-        self.r.linsert(self.key, 'before', pivotValue, value)
+    def insert(self, pivot, value):
+        self.r.linsert(self.key, 'before', pivot, value)
 
     def pop(self):
         return self.r.rpop(self.key).decode()
