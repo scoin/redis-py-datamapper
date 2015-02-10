@@ -1,13 +1,18 @@
 redis-py-datamapper
 ===================
 
-Version 0.1.0
+Version 0.2.0
 --------------
-Currently only RedisList is implemented. Dependent on redis-py. Make sure to start redis-server.
+Dependencies: redis-py. 
 
-Not all native Python List functions implemented but most are. Check source and tests.
+Make sure to start redis-server.
 
-All operations are atomic!
+Not all native Python List functions are implemented due to the nature of redis's native list, but most are. Check source and tests.
+
+All Python Dict functions are implemented in redisdict. All operations are atomic.
+
+Check the source and tests for complete usage. 
+
 
 ###How to Use
     
