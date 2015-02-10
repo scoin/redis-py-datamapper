@@ -50,15 +50,12 @@ class RedisDict:
         else:
             return values[0].decode()
 
-    def update(self, *arg, **kwargs):
+    def update(self, arg=None, **kwargs):
         build_dict = {}
-        if(len(arg) > 1): raise TypeError('expected at most 1 argument')
-        elif(len(arg) == 1):
-            arg = arg[0]
-            if(type(arg) is dict):
-                build_dict = arg
-            elif(type(arg) is list or type(arg) is zip or type(arg) is tuple):
-                build_dict = {k:v for k, v in arg}
+        if(type(arg) is dict):
+            build_dict = arg
+        elif(type(arg) is list or type(arg) is zip or type(arg) is tuple):
+            build_dict = {k:v for k, v in arg}
 
         if(len(kwargs) > 0): build_dict.update(kwargs)
 
